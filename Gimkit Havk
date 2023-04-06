@@ -1,4 +1,4 @@
-Javascript:var socket = null;
+var socket = null;
 var lastDataSent = null;
 var using = null;
 var answer = false;
