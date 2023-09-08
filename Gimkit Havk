@@ -32,7 +32,7 @@ document.onkeydown = (e) => {
 async function answerQuestion() {
 	if (using && answer) {
 		socket.send(using);
-	};
+	}p
 	await new Promise(resolve=>{
 		setTimeout(resolve,Math.random() * (2000 - 500) + 500);
 	});
