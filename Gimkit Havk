@@ -17,10 +17,10 @@ document.onkeydown = (e) => {
 	if (e.repeat) {
 		return;
 	}
-	if (e.key == ";") {
+	if (e.key == "z") {
 		using = lastDataSent;
-		alert("Saved.");
-	} else if (e.key == "u") {
+		alert("Saved, you monkey ass bitch.");
+	} else if (e.key == ".") {
 		if (answer) {
 			answer = false;
 		} else {
@@ -32,7 +32,7 @@ document.onkeydown = (e) => {
 async function answerQuestion() {
 	if (using && answer) {
 		socket.send(using);
-	}p
+	};
 	await new Promise(resolve=>{
 		setTimeout(resolve,Math.random() * (2000 - 500) + 500);
 	});
